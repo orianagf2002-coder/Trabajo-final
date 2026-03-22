@@ -1,0 +1,214 @@
+/* Estilos del cuerpo */
+body {
+    font-family: "Times New Roman", serif, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Logo y encabezado */
+header {
+    background-color: rgb(194, 144, 88);
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+/* Barra de navegación */
+nav {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Estilos de navegación bar links */
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Cambiar de color al pasar el mouse por encima de los enlaces de navegación */
+nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/* Columna de contenido */
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 500px;
+}
+
+/* Estilos de la columna izquierda */
+aside {
+    flex: 0 0 30%;
+    background-color: rgb(204, 188, 158);
+    padding: 20px;
+    min-width: 250px;
+    overflow-y: auto;
+}
+
+/* Estilos de la columna principal */
+section {
+    flex: 0 0 70%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    min-width: 500px;
+    overflow-y: auto;
+}
+
+/* Estilos para las imágenes */
+.img60 {
+    width: 100px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.img200 {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Pie de página */
+footer {
+    background-color: rgb(194, 144, 88);
+    padding: 20px;
+    text-align: center;
+    color: rgb(10, 10, 10);
+}
+
+/* Decoración de redes sociales */
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Espacio entre iconos */
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    /* Animación suave */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+}
+
+/* Estilos para formularios */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+input[type="submit"] {
+    background-color: #52af55;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a09b;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+    /* Agranda al pasar mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Sombra más intensa */
+    background-color: rgba(255, 255, 255, 1);
+}
+
+main {
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item-a {
+    grid-row: 1 / 3;
+}
+
+.item-b {
+    grid-column: 3 / 5;
+}
+
+.item-c {
+    grid-row: 2 / 4;
+}
+
+.item-d {
+    grid-column: 3 / 5;
+}
+
+/* Estilos para contacto */
+.contacto {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+}
+
+.contacto h2 {
+    color: #c29058;
+}
+
+.datos,
+.mapa {
+    margin-bottom: 20px;
+}
+
+.mapa img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
